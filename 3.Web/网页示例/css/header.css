@@ -1,0 +1,324 @@
+/*头部*/
+.header{
+	width: 100%;
+	height: 69px;
+	background-color: black;
+}
+/*头部内容*/
+.header .header-content{
+	width: 1200px;
+	height: 69px;
+	background-color: black;
+	margin: auto;
+}
+/*logo*/
+.header .header-content .logo{
+	width: 235px;
+	height: 64px;
+	background-image: url("https://www.python.org/static/img/python-logo.png");
+	position: relative;
+	top: -3px;
+	float: left;
+}
+/*导航栏*/
+.header .header-content .nav{
+	height: 69px;
+	float: left;
+	margin-left: 100px;
+}
+.nav ul li{
+	float: left;
+	padding: 0 30px;
+	height: 69px;
+	line-height: 69px;
+}
+.nav ul li:hover{
+	border-bottom: 5px solid blue;
+	/*防止下边框溢出盒子模型*/
+	box-sizing: border-box;
+}
+.header .header-content a{
+	text-decoration: none;
+	color: white;
+}
+/*注册登录*/
+.header .header-content .login{
+	height: 69px;
+	float: right;
+	line-height: 69px;
+}
+/*阿里图标*/
+.icon-weibo:before{
+	color: white;
+	font-size: 30px;
+}
+
+/*身体*/
+.body{
+	width: 100%;
+	height: 1230px;
+	padding: 30px 0;
+}
+/*身体内容*/
+.body .body-content{
+	width: 1200px;
+	height: 1170px;
+	background-color: #feffc5;
+	margin: auto;
+}
+/*身体左边部分*/
+.body .body-content .body-left{
+	width: 800px;
+	height: 995px;
+	/*border: 1px solid red;*/
+    float: left;
+}
+/*轮播图*/
+.body .body-content .body-left .left1{
+	width: 800px;
+	height: 200px;
+	/*border: 1px solid red;*/
+	background: url("https://res.shiguangkey.com//file/201806/19/20180619142252602590185.jpg") 0/800px 200px;
+	position: relative;
+	transition: 2s;
+}
+.left1 .ul1 li span{
+	font-size: 50px;
+	line-height: 200px;
+	position: absolute;
+}
+.left1 .ul1 li span:hover{
+	cursor: pointer;
+	font-size: 60px;
+	color: white;
+}
+.left1 .ul2{
+	position: absolute;
+	bottom:10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.left1 .ul2 li{
+	float: left;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid mediumpurple;
+	border-radius: 50%;
+	cursor: pointer;
+}
+/*左上二*/
+.body .body-content .body-left .left2{
+	width: 800px;
+	height: 240px;
+	background-color: #78a8ff;
+}
+.left2 ul li{
+	float: left;
+	width: 251px;
+	margin-left: 11px;
+	margin-top: 18px;
+	text-align: center;
+}
+.left2 ul li img{
+	width: 251px;
+	height: 180px;
+	transition: 2s;
+}
+.left2 ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	overflow: hidden;
+}
+.left2 ul li p{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.left2 ul li img:hover{
+	transform: scale(1.2);
+}
+/*左下一*/
+.body .body-content .left3{
+	width: 800px;
+	height: 60px;
+	background-color: pink;
+}
+.left3 ul li{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+}
+.left3 ul li:hover{
+	cursor: pointer;
+}
+.left3 .active{
+	border-bottom: 5px solid #78c0ff;
+	box-sizing: border-box;
+}
+/*左下二*/
+.body .body-content .left4{
+	width: 800px;
+	height: 420px;
+	background-color: #97ffba;
+}
+/*上半部分*/
+.left4 .left4-top{
+	width: 800px;
+	height: 200px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+/*上左部分*/
+.left4 .left4-top .top-left{
+	width: 260px;
+	height: 200px;
+	display: inline-block;
+}
+.left4 .left4-top .top-left img{
+	width: 260px;
+	height: 200px;
+	border-radius: 10%;
+}
+/*上右部分*/
+.left4 .left4-top .top-right{
+	display: inline-block;
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+}
+.left4 .left4-top .top-right p{
+	line-height: 35px;
+}
+.left4 .left4-top .top-right span{
+	color: red;
+}
+/*下半部分*/
+.left4 .left4-bottom{
+	width: 800px;
+	height: 200px;
+	/*border: 1px solid red;*/
+	position: relative;
+	margin-top: 20px;
+}
+/*下左部分*/
+.left4 .left4-bottom .bottom-left{
+	width: 260px;
+	height: 200px;
+	display: inline-block;
+}
+.left4 .left4-bottom .bottom-left img{
+	width: 260px;
+	height: 200px;
+	border-radius: 10%;
+}
+/*下右部分*/
+.left4 .left4-bottom .bottom-right{
+	display: inline-block;
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+}
+.left4 .left4-bottom .bottom-right p{
+	line-height: 35px;
+}
+.left4 .left4-bottom .bottom-right span{
+	color: red;
+}
+.left4 .show{
+	display: block;
+}
+.left4 .hide{
+	display: none;
+}
+.body .body-content .left5{
+	width: 800px;
+	height: 75px;
+	background-color: #93aaff;
+	position: relative;
+}
+.left5 .left5-box{
+	width: 400px;
+	height: 55px;
+	background-color: #ffe775;
+	text-align: center;
+	line-height: 55px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+
+/*身体的右边部分*/
+.body .body-content .body-right{
+    width: 360px;
+    height: 1170px;
+    background-color: skyblue;
+    float: right;
+}
+.body-right .right{
+    padding: 0 20px;
+}
+.body-right .right p{
+    line-height: 35px;
+}
+.body-right .right span{
+    float: right;
+    color: red;
+}
+.body-right .right img{
+    width: 320px;
+    height: 193px;
+}
+.body-right .right-bottom{
+    padding: 0 20px;
+    position: relative;
+}
+.right-bottom div{
+    width: 200px;
+    height: 56px;
+    line-height: 28px;
+    overflow: hidden;
+    /*用省略号来代替被修剪的文本*/
+    text-overflow: ellipsis;
+    /*将对象作为弹性收缩盒子模型来显示*/
+    display: -webkit-box;
+    /*显示的行数*/
+    -webkit-line-clamp:2;
+    /*弹性收缩盒子对象里面的子元素的排列方式：垂直排列*/
+    -webkit-box-orient: vertical;
+}
+.right-bottom p{
+    width: 200px;
+    line-height: 30px;
+}
+.right-bottom img{
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+.right-bottom div:hover{
+    width: 200px;
+    height: 84px;
+    line-height: 28px;
+    overflow: hidden;
+    /*用省略号来代替被修剪的文本*/
+    text-overflow: ellipsis;
+    /*将对象作为弹性收缩盒子模型来显示*/
+    display: -webkit-box;
+    /*显示的行数*/
+    -webkit-line-clamp:100;
+    /*弹性收缩盒子对象里面的子元素的排列方式：垂直排列*/
+    -webkit-box-orient: vertical;
+}
+/*单行溢出*/
+.right-p1{
+    margin-left: 20px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*规定段落不换行*/
+    white-space: nowrap;
+}
